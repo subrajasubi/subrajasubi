@@ -48,7 +48,7 @@ public class Assignment4DropXpath {
 
 		WebElement findElement = driver.findElement(By.xpath("//select[@class='dropdown']"));
 
-//findElement.getSize();
+
 
 		
 		  Select options = new Select(findElement);
@@ -59,14 +59,9 @@ public class Assignment4DropXpath {
 		  
 		  System.out.println(size);
 		  
-//		 System.out.println("The number is:"
-			// +driver.findElement(By.className("dropdown")).getAttribute("value"));
-
-		// driver.findElement(By.className("example")).sendKeys("Selenium");
 
 		  Thread.sleep(5000);
-	//	  driver.findElement(By.xpath("(//div[@class='example'])[5]")).click();
-		  
+	
 		  driver.findElement(By.xpath("(//div[@class='example'])[5]/select")).sendKeys("Selenium");
 		  
 		driver.findElement(By.xpath("//option[text()='Select your programs']/following-sibling::option")).click();
